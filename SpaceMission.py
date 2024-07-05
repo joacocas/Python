@@ -45,14 +45,14 @@ text_font = pygame.font.SysFont("Arial", 30)
 explosion_image = pygame.image.load("D:/Joaquin/Downloads/pixelArts/explosion2.png")
 
 # Load and play background music
-pygame.mixer.music.load("D:/Joaquin/Downloads/Python/deadspace.mp3")  
+pygame.mixer.music.load("D:/Joaquin/Downloads/SpaceMissionPython/deadspace.mp3")  
 pygame.mixer.music.play(-1) 
 
 # Function to display main menu
 def main_menu():
     menu_running = True
     while menu_running:
-        background_image = pygame.image.load("D:/Joaquin/Downloads/Python/FondoEspacio.png")
+        background_image = pygame.image.load("D:/Joaquin/Downloads/SpaceMissionPython/FondoEspacio.png")
         screen.blit(background_image, (0, 0))
         title_text = menu_font.render("SPACE MISSION", True, GREEN)
         screen.blit(title_text, (SCREEN_WIDTH // 2 - title_text.get_width() // 2, 100))
@@ -246,7 +246,7 @@ def main_game():
             break
         
         # Imagen de fondo
-        background_image = pygame.image.load("D:/Joaquin/Downloads/Python/FondoEspacio.png")
+        background_image = pygame.image.load("D:/Joaquin/Downloads/SpaceMissionPython/FondoEspacio.png")
         screen.blit(background_image, (0, 0))
         all_sprites.draw(screen)
     
